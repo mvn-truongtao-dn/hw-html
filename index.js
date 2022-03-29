@@ -272,9 +272,9 @@ btn_submit.addEventListener("click",(e)=>{
   e.preventDefault();
   console.log(btn_submit.getAttribute("data-id"));
   
- 
   if ( btn_submit.getAttribute("data-id") != null) {
     dataUser_table.innerHTML = loading
+
     console.log(nameValue());
     editData(url+`/${btn_submit.getAttribute("data-id")}`,{
       address: addressValue(),
@@ -294,6 +294,7 @@ btn_submit.addEventListener("click",(e)=>{
     }
     else {
       dataUser_table.innerHTML = loading
+
       console.log("create");
       postData(url, {
         name: nameValue(),
@@ -303,14 +304,14 @@ btn_submit.addEventListener("click",(e)=>{
       }).then(data => {
         console.log(data); 
         getAllData(1,10);
-        form_user.classList.remove("active_form");
-        dataUser_table.style.opacity = "1";
-        pagination.style.opacity = "1";
+        
       });
     }
  
   }
- 
+  form_user.classList.remove("active_form");
+  dataUser_table.style.opacity = "1";
+  pagination.style.opacity = "1";
  
 })
 
