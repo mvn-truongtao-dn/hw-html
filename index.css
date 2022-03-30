@@ -343,17 +343,30 @@ nav .profile-details .admin_name {
   justify-content: center;
   align-items: center;
   list-style-type: none;
-
+  width: 100%;
+  max-width: 100px;
+  margin: 20px auto;
 }
 
 .pagination .page-item {
-  margin: 10px;
+  padding: 10px;
   cursor: pointer;
-  width: 20px;
+  width: 35px;
   text-align: center;
 }
 
+.pagination .page-item:last-child {
+  border: none;
+}
 
+.pagination .page-item:hover {
+  background-color: #2697FF;
+}
+
+/* .pagination .page-item .active-paginate {
+  background-color: #2697FF;
+  color: #fff;
+} */
 /* .pagination .page-item:first-child {
   background-color: #2697FF;
   color: #fff;

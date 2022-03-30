@@ -173,8 +173,8 @@ function getAllData (currentPage,usersPerPage) {
 
       pagination.innerHTML = paginationView
       dataUser_table.innerHTML = output
-      console.log(document.querySelector(`.page-item${currentPage}`).style.color = "red");
-
+      // console.log(document.querySelector(`.page-item${currentPage}`).style.color = "red");
+      document.querySelector(`.page-item${currentPage}`).classList.add("active-paginate");
       
   });
 }
@@ -386,7 +386,7 @@ search_input.addEventListener("keydown",(e)=>{
           
           pagination.innerHTML = paginationView
           dataUser_table.innerHTML = output
-          console.log(document.querySelector(`.page-item${currentPage}`).style.color = "red");
+          document.querySelector(`.page-item${currentPage}`).classList.add("active-paginate");
 
         })
 }
@@ -441,7 +441,8 @@ btn_search.addEventListener("click",()=>{
       }
       pagination.innerHTML = paginationView
       dataUser_table.innerHTML = output
-     
+      document.querySelector(`.page-item${currentPage}`).classList.add("active-paginate");
+
     })
 })
 const loading = `<div class="loader"></div>`
