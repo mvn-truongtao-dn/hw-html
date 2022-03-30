@@ -365,8 +365,8 @@ search_input.addEventListener("keydown",(e)=>{
                   <td>${currentData[i].phone}</td>
                   <td>${currentData[i].email}</td>
                   <td>
-                    <button class="btn-delete" onClick={btn_delete(${currentData[i].id})}>Delete</button>
-                    <button class="btn-edit" onClick={btn_edit(${currentData[i].id})}>Edit</button>
+                  <button class="btn-delete" onClick={btn_delete(${currentData[i].id})}><i class='bx bx-trash' ></i>Delete</button>
+                  <button class="btn-edit" onClick={btn_edit(${currentData[i].id})}><i class='bx bxs-edit' ></i>Edit</button>
                   </td>
               </tr>
               
@@ -421,8 +421,8 @@ btn_search.addEventListener("click",()=>{
               <td>${currentData[i].phone}</td>
               <td>${currentData[i].email}</td>
               <td>
-                <button class="btn-delete" onClick={btn_delete(${currentData[i].id})}>Delete</button>
-                <button class="btn-edit" onClick={btn_edit(${currentData[i].id})}>Edit</button>
+                <button class="btn-delete" onClick={btn_delete(${currentData[i].id})}><i class='bx bx-trash' ></i>Delete</button>
+                <button class="btn-edit" onClick={btn_edit(${currentData[i].id})}><i class='bx bxs-edit' ></i>Edit</button>
               </td>
           </tr>
           
