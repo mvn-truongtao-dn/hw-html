@@ -212,6 +212,7 @@ var btn_delete = (id) =>{
 }
 
 const btn_edit = (id) =>{
+  notification.innerHTML = ""
   // dataUser_table.innerHTML = loading
   getDetailsData(url+`/${id}`).then(data => {
   console.log(data);
@@ -267,7 +268,7 @@ var emailValue = (e) =>{
 }
 
 const btn_submit = document.getElementById("btn-submit");
-
+const notification = document.querySelector(".alert");
 btn_submit.addEventListener("click",(e)=>{
   e.preventDefault();
   console.log(btn_submit.getAttribute("data-id"));
@@ -287,10 +288,15 @@ btn_submit.addEventListener("click",(e)=>{
   
     });
     console.log("edit");
+    form_user.classList.remove("active_form");
+    dataUser_table.style.opacity = "1";
+    pagination.style.opacity = "1";
+    notification.innerHTML = ""
   }
   else {
-    if (nameValue() === null ) {
-      alert("ban can phai nhap")
+    if (nameValue() === "" ) {
+      notification.innerHTML = "Bạn cần phải nhập đầy đủ thông tin!";
+
     }
     else {
       dataUser_table.innerHTML = loading
@@ -306,12 +312,16 @@ btn_submit.addEventListener("click",(e)=>{
         getAllData(1,10);
         
       });
+      form_user.classList.remove("active_form");
+      dataUser_table.style.opacity = "1";
+      pagination.style.opacity = "1";
+      notification.innerHTML = ""
     }
  
   }
-  form_user.classList.remove("active_form");
-  dataUser_table.style.opacity = "1";
-  pagination.style.opacity = "1";
+  // form_user.classList.remove("active_form");
+  // dataUser_table.style.opacity = "1";
+  // pagination.style.opacity = "1";
  
 })
 

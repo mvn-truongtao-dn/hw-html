@@ -487,3 +487,9 @@ nav .profile-details .admin_name {
   align-items: center;
   transform: translate(0px, 10px);
 }
+
+.notification .alert {
+  color: red;
+  font-size: 16px;
+  font-weight: 500;
+}
