@@ -4,6 +4,7 @@ var form_user = document.querySelector(".form_user");
 var pagination = document.querySelector(".pagination");
 var sidebar_close = document.querySelector(".sidebar-close");
 var sidebar =  document.querySelector(".sidebar");
+var content_body = document.querySelector(".content-body");
 sidebarBtn.addEventListener("click",()=>{
   // let sidebar =  document.querySelector(".sidebar");
   let home_section = document.querySelector(".home-section");
@@ -224,6 +225,8 @@ const btn_edit = (id) =>{
   
   console.log(document.getElementById("name").value);
   form_user.classList.toggle("active_form");
+  content_body.style.display = "none"
+
   dataUser_table.style.opacity = "0";
   pagination.style.opacity = "0";
   btn_submit.setAttribute("data-id",`${id}`);
@@ -233,7 +236,8 @@ const btn_edit = (id) =>{
 
 const btn_close = document.querySelector(".btn-close");
 btn_close.addEventListener("click",(e)=>{
-  e.preventDefault();
+  // e.preventDefault();
+  content_body.style.display = "block"
   form_user.classList.remove("active_form");
   dataUser_table.style.opacity = "1";
   pagination.style.opacity = "1";
@@ -243,6 +247,7 @@ const home_content = document.querySelector(".home-content");
 
 const btn_Add = document.querySelector(".btn-add");
 btn_Add.addEventListener("click",()=>{
+  content_body.style.display = "none"
   document.getElementById("name").value = "";
   document.getElementById("phone").value = "";
   document.getElementById("address").value = "";
@@ -272,7 +277,6 @@ const notification = document.querySelector(".alert");
 btn_submit.addEventListener("click",(e)=>{
   e.preventDefault();
   console.log(btn_submit.getAttribute("data-id"));
-  
   if ( btn_submit.getAttribute("data-id") != null) {
     dataUser_table.innerHTML = loading
 
@@ -284,19 +288,22 @@ btn_submit.addEventListener("click",(e)=>{
       phone: phoneValue()
     }).then(data => {
       console.log(data); 
+
       getAllData(1,10);
   
     });
     console.log("edit");
     form_user.classList.remove("active_form");
+    content_body.style.display = "block"
     dataUser_table.style.opacity = "1";
     pagination.style.opacity = "1";
     notification.innerHTML = ""
+    console.log();
   }
   else {
-    if (nameValue() === "" ) {
+    if (nameValue() === "" || addressValue() === "" || phoneValue() === "" || emailValue() ==="") {
       notification.innerHTML = "Bạn cần phải nhập đầy đủ thông tin!";
-
+    
     }
     else {
       dataUser_table.innerHTML = loading
@@ -313,6 +320,7 @@ btn_submit.addEventListener("click",(e)=>{
         
       });
       form_user.classList.remove("active_form");
+      content_body.style.display = "block"
       dataUser_table.style.opacity = "1";
       pagination.style.opacity = "1";
       notification.innerHTML = ""
@@ -351,6 +359,7 @@ search_input.addEventListener("keydown",(e)=>{
     let params = search_input.value;
     searchData(url+`/?name=${params}`).then(data=>
       {
+        
         console.log(data);
         let currentPage = 1, usersPerPage =10;
         let indexOfLastUser = currentPage * usersPerPage;

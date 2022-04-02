@@ -62,7 +62,8 @@
     <nav class="nav-header">
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
+        <a href=""><span class="dashboard">Dashboard</span></a>
+        
       </div>
       <div class="search-box">
         <input type="text" class="search-input" placeholder="Search...">
@@ -75,35 +76,36 @@
     </nav>
 
     <div class="home-content">
-      <div class="content-header">
-        <div class="selection-button">
-          <button class="btn-alldata">All</button>        
+      <div class="content-body">
+        <div class="content-header">
+          <div class="selection-button">
+            <button class="btn-alldata">All</button>        
+          </div>
+          <div class="createUser-button">
+            <button class="btn-add"><i class='bx bx-plus'></i>CREATE</button>
+          </div>
         </div>
-        <div class="createUser-button">
-          <button class="btn-add"><i class='bx bx-plus'></i>CREATE</button>
+        <div class="main-contentdata">
+          <table class="dataUser_table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="list_data">
+              
+            </tbody>
+          </table>
+          <ul class="pagination">
+    
+          </ul>
         </div>
       </div>
-      <div class="main-contentdata">
-        <table class="dataUser_table">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Phone</th>
-              <th>Email</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody class="list_data">
-            
-          </tbody>
-        </table>
-        <ul class="pagination">
-  
-        </ul>
-      </div>
-      
       <div class="form_user">
         
         <form action="">
