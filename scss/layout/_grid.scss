@@ -13,6 +13,10 @@ $grid-columns: 12;
     }
   }
 }
+
+// @mixin responsive-column($size) {
+//   flex-direction:   ;
+// }
 // End mixins for build grid
 $grid-gutter: 10px;
 $container-width: 1200px;
@@ -69,4 +73,59 @@ $container-width: 1200px;
  * Ex: col-largest-1, col-largest-2 */
 @include respond-above(largest) {
   @include build-grid(largest);
+}
+
+@include respond-below(medium) {
+  .list-card-course {
+    flex-direction: column;
+  }
+  .card-course {
+    width: 370px;
+    margin: 10px 0;
+  }
+  .list-card-collection .card-collection {
+    width: 50% !important;
+  }
+  .item-blog {
+    width: 100% !important;
+    text-align: center;
+  }
+  .item-type {
+    width: 100% !important;
+  }
+  .content-contact {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+  .content-contact2 {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+  .content-contact3 {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+  .content-footertop {
+    padding: 3rem 3rem !important;
+  }
+  .content-footerbottom {
+    flex-direction: column;
+    ul {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include respond-below(large) {
+  nav {
+    .list-menu {
+      display: none !important;
+    }
+  }
+  .btn-openmenu {
+    display: block !important;
+  }
+  .header-bottom-container {
+    padding: 0 3rem !important;
+  }
 }

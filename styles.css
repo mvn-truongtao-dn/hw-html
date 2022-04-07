@@ -526,6 +526,372 @@ table {
     padding: 0.625rem;
     border: 1px solid #e4e4e4; }
 
+.container-flex, .card-content .list-color, .header_content_section .content-selling .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  flex-wrap: wrap; }
+
+.card-content .title-card {
+  display: block;
+  text-align: center;
+  color: #222222;
+  margin: 10px 0;
+  font-size: 16px; }
+
+.card-content .price-card {
+  display: block;
+  text-align: center;
+  color: #696969; }
+
+.card-content .list-color {
+  justify-content: center; }
+  .card-content .list-color .item-color1 {
+    background-color: #111; }
+  .card-content .list-color .item-color2 {
+    background-color: #e83e8c; }
+  .card-content .list-color .item-color3 {
+    background-color: #f1da4e; }
+
+.content-details-card {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%); }
+  .content-details-card .title {
+    font-size: 50px; }
+  .content-details-card .banner-btn .btn-shopnow {
+    background-color: #f08328;
+    color: #fff; }
+  .content-details-card .banner-btn .btn-viewlook {
+    background-color: #fff;
+    color: #222222; }
+  .content-details-card .banner-btn .btn-viewlook:hover {
+    opacity: .8; }
+  .content-details-card .banner-btn .btn-shopnow:hover {
+    opacity: .8; }
+
+.header_content_section {
+  padding: 20px 0; }
+  .header_content_section .content-selling .title-selling {
+    text-align: center;
+    text-transform: uppercase; }
+  .header_content_section .content-selling .icon {
+    justify-content: center; }
+    .header_content_section .content-selling .icon span {
+      width: 24px;
+      height: 1px;
+      display: inline-block;
+      background-color: #dcdcdc;
+      margin: 0 5px; }
+    .header_content_section .content-selling .icon .bx-dumbbell {
+      font-size: 25px;
+      color: #dcdcdc; }
+  .header_content_section .content-selling .subtitle-selling {
+    text-align: center;
+    display: block;
+    color: #939394;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    white-space: pre-line; }
+
+.card-course {
+  height: 300px;
+  width: 33.33%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 0 10px;
+  position: relative; }
+  .card-course .content-card {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%); }
+    .card-course .content-card .sub-course {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .card-course .content-card .title-course {
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase; }
+
+.page-main {
+  padding: 30px 0px;
+  padding: 1.875rem 0rem; }
+
+.banner-title, .content-details-card .sub-title, .content-details-card .title {
+  color: #fff;
+  text-transform: uppercase; }
+
+.container-content {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%; }
+
+.button-banner, .content-details-card .banner-btn .btn-shopnow, .content-details-card .banner-btn .btn-viewlook {
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size: 16px; }
+
+.item-color, .card-content .list-color .item-color1, .card-content .list-color .item-color2, .card-content .list-color .item-color3 {
+  margin: 10px 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  cursor: pointer; }
+
+.banner-section {
+  width: 100%;
+  background-image: url("/image/slide-01.jpg");
+  height: 800px;
+  background-position: center center;
+  position: relative; }
+
+.course-type {
+  margin: 30px 0; }
+  .course-type .container-content .list-card-course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .course-type .container-content .list-card-course .card-course1 {
+      background-image: url("/image/banner-collection-01.jpg"); }
+    .course-type .container-content .list-card-course .card-course2 {
+      background-image: url("/image/banner-collection-02.jpg"); }
+    .course-type .container-content .list-card-course .card-course3 {
+      background-image: url("/image/banner-collection-03.jpg"); }
+
+.type-tab-collection .list-tab {
+  text-align: center; }
+  .type-tab-collection .list-tab .item-tag {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #939394;
+    font-weight: 500; }
+    .type-tab-collection .list-tab .item-tag .link-tag {
+      padding: 0 15px; }
+      .type-tab-collection .list-tab .item-tag .link-tag:hover {
+        border-bottom: 2px solid #e83e8c; }
+    .type-tab-collection .list-tab .item-tag.active {
+      border-bottom: 2px solid #e83e8c; }
+
+.list-card-collection .card-collection {
+  width: 25%;
+  padding: 10px 0; }
+
+.banner-section2 {
+  width: 100%;
+  background-image: url("/image/full-width-banner-desktop.jpg");
+  height: 500px;
+  margin: 20px 0;
+  position: relative; }
+
+.selling-section {
+  margin: 50px 0; }
+  .selling-section .collection .list-card-collection {
+    display: flex;
+    flex-wrap: wrap; }
+    .selling-section .collection .list-card-collection .card-collection {
+      width: 25%;
+      padding: 0 10px; }
+
+.lastnew-section .list-blog {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px; }
+  .lastnew-section .list-blog .item-blog {
+    width: 33.33%;
+    padding: 10px; }
+    .lastnew-section .list-blog .item-blog .post-info {
+      margin-bottom: 15px; }
+      .lastnew-section .list-blog .item-blog .post-info .post-title {
+        color: #333;
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 600; }
+      .lastnew-section .list-blog .item-blog .post-info .post-time {
+        color: #939394; }
+        .lastnew-section .list-blog .item-blog .post-info .post-time time {
+          color: #333;
+          font-weight: 400; }
+    .lastnew-section .list-blog .item-blog .post-content {
+      color: #939394;
+      font-size: 1.09375rem;
+      line-height: 2rem; }
+
+.line-section .container-content-line {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px; }
+  .line-section .container-content-line .line-break-page {
+    display: block;
+    margin: 55px 0;
+    border: 0;
+    border-bottom: 1px solid #e8e9eb; }
+
+.type-shipping .container-content .list-type {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+  .type-shipping .container-content .list-type .item-type {
+    width: 33.33%; }
+    .type-shipping .container-content .list-type .item-type .icon-truck {
+      font-size: 35px;
+      margin: 10px 0;
+      color: #f08528; }
+    .type-shipping .container-content .list-type .item-type h3 {
+      font-size: 0.875rem;
+      font-weight: 400;
+      padding: 10px 0; }
+    .type-shipping .container-content .list-type .item-type p {
+      color: #939394;
+      font-size: 0.875rem; }
+
+.page-main {
+  padding: 30px 0px;
+  padding: 1.875rem 0rem; }
+
+.banner-title, .content-details-card .sub-title, .content-details-card .title {
+  color: #fff;
+  text-transform: uppercase; }
+
+.container-content {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%; }
+
+.button-banner, .content-details-card .banner-btn .btn-shopnow, .content-details-card .banner-btn .btn-viewlook {
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size: 16px; }
+
+.item-color, .card-content .list-color .item-color1, .card-content .list-color .item-color2, .card-content .list-color .item-color3 {
+  margin: 10px 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  cursor: pointer; }
+
+.banner-section {
+  width: 100%;
+  background-image: url("/image/slide-01.jpg");
+  height: 800px;
+  background-position: center center;
+  position: relative; }
+
+.course-type {
+  margin: 30px 0; }
+  .course-type .container-content .list-card-course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .course-type .container-content .list-card-course .card-course1 {
+      background-image: url("/image/banner-collection-01.jpg"); }
+    .course-type .container-content .list-card-course .card-course2 {
+      background-image: url("/image/banner-collection-02.jpg"); }
+    .course-type .container-content .list-card-course .card-course3 {
+      background-image: url("/image/banner-collection-03.jpg"); }
+
+.type-tab-collection .list-tab {
+  text-align: center; }
+  .type-tab-collection .list-tab .item-tag {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #939394;
+    font-weight: 500; }
+    .type-tab-collection .list-tab .item-tag .link-tag {
+      padding: 0 15px; }
+      .type-tab-collection .list-tab .item-tag .link-tag:hover {
+        border-bottom: 2px solid #e83e8c; }
+    .type-tab-collection .list-tab .item-tag.active {
+      border-bottom: 2px solid #e83e8c; }
+
+.list-card-collection .card-collection {
+  width: 25%;
+  padding: 10px 0; }
+
+.banner-section2 {
+  width: 100%;
+  background-image: url("/image/full-width-banner-desktop.jpg");
+  height: 500px;
+  margin: 20px 0;
+  position: relative; }
+
+.selling-section {
+  margin: 50px 0; }
+  .selling-section .collection .list-card-collection {
+    display: flex;
+    flex-wrap: wrap; }
+    .selling-section .collection .list-card-collection .card-collection {
+      width: 25%;
+      padding: 0 10px; }
+
+.lastnew-section .list-blog {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px; }
+  .lastnew-section .list-blog .item-blog {
+    width: 33.33%;
+    padding: 10px; }
+    .lastnew-section .list-blog .item-blog .post-info {
+      margin-bottom: 15px; }
+      .lastnew-section .list-blog .item-blog .post-info .post-title {
+        color: #333;
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 600; }
+      .lastnew-section .list-blog .item-blog .post-info .post-time {
+        color: #939394; }
+        .lastnew-section .list-blog .item-blog .post-info .post-time time {
+          color: #333;
+          font-weight: 400; }
+    .lastnew-section .list-blog .item-blog .post-content {
+      color: #939394;
+      font-size: 1.09375rem;
+      line-height: 2rem; }
+
+.line-section .container-content-line {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px; }
+  .line-section .container-content-line .line-break-page {
+    display: block;
+    margin: 55px 0;
+    border: 0;
+    border-bottom: 1px solid #e8e9eb; }
+
+.type-shipping .container-content .list-type {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+  .type-shipping .container-content .list-type .item-type {
+    width: 33.33%; }
+    .type-shipping .container-content .list-type .item-type .icon-truck {
+      font-size: 35px;
+      margin: 10px 0;
+      color: #f08528; }
+    .type-shipping .container-content .list-type .item-type h3 {
+      font-size: 0.875rem;
+      font-weight: 400;
+      padding: 10px 0; }
+    .type-shipping .container-content .list-type .item-type p {
+      color: #939394;
+      font-size: 0.875rem; }
+
 .flex {
   display: flex; }
 
@@ -534,6 +900,9 @@ table {
 
 .justify-content-between {
   justify-content: space-between; }
+
+.justify-content-center {
+  justify-content: center; }
 
 .container {
   padding-left: 10px;
@@ -707,401 +1076,172 @@ table {
   .col-largest-12 {
     width: 100%; } }
 
+@media (max-width: 767px) {
+  .list-card-course {
+    flex-direction: column; }
+  .card-course {
+    width: 370px;
+    margin: 10px 0; }
+  .list-card-collection .card-collection {
+    width: 50% !important; }
+  .item-blog {
+    width: 100% !important;
+    text-align: center; }
+  .item-type {
+    width: 100% !important; }
+  .content-contact {
+    width: 50% !important;
+    margin: 10px 0; }
+  .content-contact2 {
+    width: 50% !important;
+    margin: 10px 0; }
+  .content-contact3 {
+    width: 50% !important;
+    margin: 10px 0; }
+  .content-footertop {
+    padding: 3rem 3rem !important; }
+  .content-footerbottom {
+    flex-direction: column; }
+    .content-footerbottom ul {
+      margin-bottom: 10px; } }
+
+@media (max-width: 1023px) {
+  nav .list-menu {
+    display: none !important; }
+  .btn-openmenu {
+    display: block !important; }
+  .header-bottom-container {
+    padding: 0 3rem !important; } }
+
 .page-header {
   padding: 10px;
   padding: 0.625rem;
   background: #e9eaec;
   text-align: center; }
 
-.font-size-strong, header .header-top .header-container .header-mid strong, header .header-top .header-container .header-mid .number-countdown {
+.font-size-strong {
   font-size: 14px;
   font-weight: 600; }
 
-.container-flex, header .header-top .header-container, header .header-bottom .header-bottom-container, main .type-tab-collection .container-content .list-card-collection, main .type-tab-collection .line-section .container-content-line .list-card-collection, main .line-section .type-tab-collection .container-content-line .list-card-collection, main .type-tab-collection .container-content .list-card-collection .content-collection .list-color, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color, main .selling-section .container-content .content-selling .icon, main .selling-section .line-section .container-content-line .content-selling .icon, main .line-section .selling-section .container-content-line .content-selling .icon, main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color, main .lastnew-section .container-content .content-selling .icon, main .lastnew-section .line-section .container-content-line .content-selling .icon, main .line-section .lastnew-section .container-content-line .content-selling .icon, .page-footer .footer-top .container-content .content-footertop, .page-footer .footer-top main .line-section .container-content-line .content-footertop, main .line-section .page-footer .footer-top .container-content-line .content-footertop, .page-footer .footer-bottom .container-content, .page-footer .footer-bottom main .line-section .container-content-line, main .line-section .page-footer .footer-bottom .container-content-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px; }
-
-header .header-top {
+.header-top {
   min-height: 44px;
   background-color: #222222;
   color: #fff;
   font-size: 14px;
   padding: 10px 0; }
-  header .header-top .header-container .header-mid {
-    font-size: small; }
-  header .header-top .header-container .header-end button {
+  .header-top .header-container .header-mid {
+    font-size: 400; }
+  .header-top .header-container .header-end button {
     border: none;
     background-color: #222222;
     color: #fff;
     font-size: small; }
 
-header .header-bottom {
+.header-bottom {
   height: 80px;
   position: relative; }
-  header .header-bottom .header-bottom-container {
+  .header-bottom .header-bottom-container {
     height: 80px; }
-    header .header-bottom .header-bottom-container .logo {
+    .header-bottom .header-bottom-container .btn-openmenu {
+      font-size: 25px;
+      flex-grow: 10;
+      display: none; }
+    .header-bottom .header-bottom-container .logo {
       flex-grow: 1; }
-    header .header-bottom .header-bottom-container nav {
+    .header-bottom .header-bottom-container nav {
       flex-grow: 8;
       text-align: center; }
-      header .header-bottom .header-bottom-container nav .list-menu {
+      .header-bottom .header-bottom-container nav .list-menu {
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%; }
-        header .header-bottom .header-bottom-container nav .list-menu .item-menu {
+        .header-bottom .header-bottom-container nav .list-menu .item-menu {
           display: inline-block;
           font-size: 8px;
           font-weight: 500; }
-          header .header-bottom .header-bottom-container nav .list-menu .item-menu .link-item {
+          .header-bottom .header-bottom-container nav .list-menu .item-menu .link-item {
             padding: 0 17.5px;
             text-transform: uppercase;
             color: #222;
             font-size: 16px; }
-          header .header-bottom .header-bottom-container nav .list-menu .item-menu .link-item:hover {
+          .header-bottom .header-bottom-container nav .list-menu .item-menu .link-item:hover {
             color: #f08528; }
-    header .header-bottom .header-bottom-container .group-btn {
+    .header-bottom .header-bottom-container .group-btn {
       flex-grow: 1;
       display: flex;
       justify-content: end;
       font-size: 28px;
       font-weight: 500; }
-      header .header-bottom .header-bottom-container .group-btn .bx {
+      .header-bottom .header-bottom-container .group-btn .bx {
         padding: 0 8px; }
 
 .page-main {
   padding: 30px 0px;
-  padding: 1.875rem 0rem;
-  min-height: 80vh; }
-
-.banner-title, main .banner-section .container-content .content-details .sub-title, main .banner-section .line-section .container-content-line .content-details .sub-title, main .line-section .banner-section .container-content-line .content-details .sub-title, main .banner-section .container-content .content-details .title, main .banner-section .line-section .container-content-line .content-details .title, main .line-section .banner-section .container-content-line .content-details .title, main .banner-section2 .container-content .content-details .sub-title, main .banner-section2 .line-section .container-content-line .content-details .sub-title, main .line-section .banner-section2 .container-content-line .content-details .sub-title, main .banner-section2 .container-content .content-details .title, main .banner-section2 .line-section .container-content-line .content-details .title, main .line-section .banner-section2 .container-content-line .content-details .title {
-  color: #fff;
-  text-transform: uppercase; }
-
-.container-content, main .line-section .container-content-line {
-  max-width: 1200px;
-  margin: auto;
-  height: 100%; }
-
-.button-banner, main .banner-section .container-content .content-details .banner-btn .btn-shopnow, main .banner-section .line-section .container-content-line .content-details .banner-btn .btn-shopnow, main .line-section .banner-section .container-content-line .content-details .banner-btn .btn-shopnow, main .banner-section .container-content .content-details .banner-btn .btn-viewlook, main .banner-section .line-section .container-content-line .content-details .banner-btn .btn-viewlook, main .line-section .banner-section .container-content-line .content-details .banner-btn .btn-viewlook, main .banner-section2 .container-content .content-details .banner-btn .btn-shopnow, main .banner-section2 .line-section .container-content-line .content-details .banner-btn .btn-shopnow, main .line-section .banner-section2 .container-content-line .content-details .banner-btn .btn-shopnow, main .banner-section2 .container-content .content-details .banner-btn .btn-viewlook, main .banner-section2 .line-section .container-content-line .content-details .banner-btn .btn-viewlook, main .line-section .banner-section2 .container-content-line .content-details .banner-btn .btn-viewlook {
-  border: none;
-  cursor: pointer;
-  height: 50px;
-  width: 150px;
-  font-size: 16px; }
-
-.card-course, main .course-type .container-content .list-card-course .card-course1, main .course-type .line-section .container-content-line .list-card-course .card-course1, main .line-section .course-type .container-content-line .list-card-course .card-course1, main .course-type .container-content .list-card-course .card-course2, main .course-type .line-section .container-content-line .list-card-course .card-course2, main .line-section .course-type .container-content-line .list-card-course .card-course2, main .course-type .container-content .list-card-course .card-course3, main .course-type .line-section .container-content-line .list-card-course .card-course3, main .line-section .course-type .container-content-line .list-card-course .card-course3 {
-  height: 300px;
-  width: 370px;
-  background-repeat: no-repeat;
-  position: relative; }
-  .card-course .content-card, main .course-type .container-content .list-card-course .card-course1 .content-card, main .course-type .line-section .container-content-line .list-card-course .card-course1 .content-card, main .line-section .course-type .container-content-line .list-card-course .card-course1 .content-card, main .course-type .container-content .list-card-course .card-course2 .content-card, main .course-type .line-section .container-content-line .list-card-course .card-course2 .content-card, main .line-section .course-type .container-content-line .list-card-course .card-course2 .content-card, main .course-type .container-content .list-card-course .card-course3 .content-card, main .course-type .line-section .container-content-line .list-card-course .card-course3 .content-card, main .line-section .course-type .container-content-line .list-card-course .card-course3 .content-card {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-10%, -50%); }
-    .card-course .content-card .sub-course, main .course-type .container-content .list-card-course .card-course1 .content-card .sub-course, main .course-type .line-section .container-content-line .list-card-course .card-course1 .content-card .sub-course, main .line-section .course-type .container-content-line .list-card-course .card-course1 .content-card .sub-course, main .course-type .container-content .list-card-course .card-course2 .content-card .sub-course, main .course-type .line-section .container-content-line .list-card-course .card-course2 .content-card .sub-course, main .line-section .course-type .container-content-line .list-card-course .card-course2 .content-card .sub-course, main .course-type .container-content .list-card-course .card-course3 .content-card .sub-course, main .course-type .line-section .container-content-line .list-card-course .card-course3 .content-card .sub-course, main .line-section .course-type .container-content-line .list-card-course .card-course3 .content-card .sub-course {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 500;
-      text-transform: uppercase; }
-    .card-course .content-card .title-course, main .course-type .container-content .list-card-course .card-course1 .content-card .title-course, main .course-type .line-section .container-content-line .list-card-course .card-course1 .content-card .title-course, main .line-section .course-type .container-content-line .list-card-course .card-course1 .content-card .title-course, main .course-type .container-content .list-card-course .card-course2 .content-card .title-course, main .course-type .line-section .container-content-line .list-card-course .card-course2 .content-card .title-course, main .line-section .course-type .container-content-line .list-card-course .card-course2 .content-card .title-course, main .course-type .container-content .list-card-course .card-course3 .content-card .title-course, main .course-type .line-section .container-content-line .list-card-course .card-course3 .content-card .title-course, main .line-section .course-type .container-content-line .list-card-course .card-course3 .content-card .title-course {
-      color: #fff;
-      font-size: 35px;
-      font-weight: 600;
-      text-transform: uppercase; }
-
-.item-color, main .type-tab-collection .container-content .list-card-collection .content-collection .list-color .item-color1, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color .item-color1, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color .item-color1, main .type-tab-collection .container-content .list-card-collection .content-collection .list-color .item-color2, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color .item-color2, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color .item-color2, main .type-tab-collection .container-content .list-card-collection .content-collection .list-color .item-color3, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color .item-color3, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color .item-color3, main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color .item-color1, main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color .item-color2, main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color .item-color3 {
-  margin: 10px 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  cursor: pointer; }
-
-main .banner-section {
-  width: 100%;
-  background-image: url("/image/slide-01.jpg");
-  height: 800px;
-  background-position: center center;
-  position: relative; }
-  main .banner-section .container-content .content-details, main .banner-section .line-section .container-content-line .content-details, main .line-section .banner-section .container-content-line .content-details {
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%); }
-    main .banner-section .container-content .content-details .title, main .banner-section .line-section .container-content-line .content-details .title, main .line-section .banner-section .container-content-line .content-details .title {
-      font-size: 50px; }
-    main .banner-section .container-content .content-details .banner-btn .btn-shopnow, main .banner-section .line-section .container-content-line .content-details .banner-btn .btn-shopnow, main .line-section .banner-section .container-content-line .content-details .banner-btn .btn-shopnow {
-      background-color: #f08328;
-      color: #fff; }
-    main .banner-section .container-content .content-details .banner-btn .btn-viewlook, main .banner-section .line-section .container-content-line .content-details .banner-btn .btn-viewlook, main .line-section .banner-section .container-content-line .content-details .banner-btn .btn-viewlook {
-      background-color: #fff;
-      color: #222222; }
-    main .banner-section .container-content .content-details .banner-btn .btn-viewlook:hover, main .banner-section .line-section .container-content-line .content-details .banner-btn .btn-viewlook:hover, main .line-section .banner-section .container-content-line .content-details .banner-btn .btn-viewlook:hover {
-      opacity: .8; }
-    main .banner-section .container-content .content-details .banner-btn .btn-shopnow:hover, main .banner-section .line-section .container-content-line .content-details .banner-btn .btn-shopnow:hover, main .line-section .banner-section .container-content-line .content-details .banner-btn .btn-shopnow:hover {
-      opacity: .8; }
-
-main .course-type {
-  margin: 30px 0; }
-  main .course-type .container-content .list-card-course, main .course-type .line-section .container-content-line .list-card-course, main .line-section .course-type .container-content-line .list-card-course {
-    display: flex;
-    justify-content: space-between; }
-    main .course-type .container-content .list-card-course .card-course1, main .course-type .line-section .container-content-line .list-card-course .card-course1, main .line-section .course-type .container-content-line .list-card-course .card-course1 {
-      background-image: url("/image/banner-collection-01.jpg"); }
-    main .course-type .container-content .list-card-course .card-course2, main .course-type .line-section .container-content-line .list-card-course .card-course2, main .line-section .course-type .container-content-line .list-card-course .card-course2 {
-      background-image: url("/image/banner-collection-02.jpg"); }
-    main .course-type .container-content .list-card-course .card-course3, main .course-type .line-section .container-content-line .list-card-course .card-course3, main .line-section .course-type .container-content-line .list-card-course .card-course3 {
-      background-image: url("/image/banner-collection-03.jpg"); }
-
-main .type-tab-collection .container-content .tab-collection .list-tab, main .type-tab-collection .line-section .container-content-line .tab-collection .list-tab, main .line-section .type-tab-collection .container-content-line .tab-collection .list-tab {
-  text-align: center; }
-  main .type-tab-collection .container-content .tab-collection .list-tab .item-tag, main .type-tab-collection .line-section .container-content-line .tab-collection .list-tab .item-tag, main .line-section .type-tab-collection .container-content-line .tab-collection .list-tab .item-tag {
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #939394;
-    font-weight: 500; }
-    main .type-tab-collection .container-content .tab-collection .list-tab .item-tag .link-tag, main .type-tab-collection .line-section .container-content-line .tab-collection .list-tab .item-tag .link-tag, main .line-section .type-tab-collection .container-content-line .tab-collection .list-tab .item-tag .link-tag {
-      padding: 0 15px; }
-    main .type-tab-collection .container-content .tab-collection .list-tab .item-tag .link-tag:hover, main .type-tab-collection .line-section .container-content-line .tab-collection .list-tab .item-tag .link-tag:hover, main .line-section .type-tab-collection .container-content-line .tab-collection .list-tab .item-tag .link-tag:hover {
-      border-bottom: 2px solid #e83e8c; }
-    main .type-tab-collection .container-content .tab-collection .list-tab .item-tag .active, main .type-tab-collection .line-section .container-content-line .tab-collection .list-tab .item-tag .active, main .line-section .type-tab-collection .container-content-line .tab-collection .list-tab .item-tag .active {
-      border-bottom: 2px solid #e83e8c; }
-
-main .type-tab-collection .container-content .list-card-collection .content-collection .title-card, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .title-card, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .title-card {
-  display: block;
-  text-align: center;
-  color: #222222;
-  margin: 10px 0;
-  font-size: 16px; }
-
-main .type-tab-collection .container-content .list-card-collection .content-collection .price-card, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .price-card, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .price-card {
-  display: block;
-  text-align: center;
-  color: #696969; }
-
-main .type-tab-collection .container-content .list-card-collection .content-collection .list-color, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color {
-  justify-content: center; }
-  main .type-tab-collection .container-content .list-card-collection .content-collection .list-color .item-color1, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color .item-color1, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color .item-color1 {
-    background-color: #111; }
-  main .type-tab-collection .container-content .list-card-collection .content-collection .list-color .item-color2, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color .item-color2, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color .item-color2 {
-    background-color: #e83e8c; }
-  main .type-tab-collection .container-content .list-card-collection .content-collection .list-color .item-color3, main .type-tab-collection .line-section .container-content-line .list-card-collection .content-collection .list-color .item-color3, main .line-section .type-tab-collection .container-content-line .list-card-collection .content-collection .list-color .item-color3 {
-    background-color: #f1da4e; }
-
-main .banner-section2 {
-  width: 100%;
-  background-image: url("/image/full-width-banner-desktop.jpg");
-  height: 500px;
-  margin: 20px 0;
-  position: relative; }
-  main .banner-section2 .container-content .content-details, main .banner-section2 .line-section .container-content-line .content-details, main .line-section .banner-section2 .container-content-line .content-details {
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%); }
-    main .banner-section2 .container-content .content-details .title, main .banner-section2 .line-section .container-content-line .content-details .title, main .line-section .banner-section2 .container-content-line .content-details .title {
-      font-size: 50px; }
-    main .banner-section2 .container-content .content-details .banner-btn .btn-shopnow, main .banner-section2 .line-section .container-content-line .content-details .banner-btn .btn-shopnow, main .line-section .banner-section2 .container-content-line .content-details .banner-btn .btn-shopnow {
-      background-color: #f08328;
-      color: #fff; }
-    main .banner-section2 .container-content .content-details .banner-btn .btn-viewlook, main .banner-section2 .line-section .container-content-line .content-details .banner-btn .btn-viewlook, main .line-section .banner-section2 .container-content-line .content-details .banner-btn .btn-viewlook {
-      background-color: #fff;
-      color: #222222; }
-    main .banner-section2 .container-content .content-details .banner-btn .btn-viewlook:hover, main .banner-section2 .line-section .container-content-line .content-details .banner-btn .btn-viewlook:hover, main .line-section .banner-section2 .container-content-line .content-details .banner-btn .btn-viewlook:hover {
-      opacity: .8; }
-    main .banner-section2 .container-content .content-details .banner-btn .btn-shopnow:hover, main .banner-section2 .line-section .container-content-line .content-details .banner-btn .btn-shopnow:hover, main .line-section .banner-section2 .container-content-line .content-details .banner-btn .btn-shopnow:hover {
-      opacity: .8; }
-
-main .selling-section {
-  margin: 50px 0; }
-  main .selling-section .container-content, main .selling-section .line-section .container-content-line, main .line-section .selling-section .container-content-line {
-    padding: 20px 0; }
-    main .selling-section .container-content .content-selling .title-selling, main .selling-section .line-section .container-content-line .content-selling .title-selling, main .line-section .selling-section .container-content-line .content-selling .title-selling {
-      text-align: center;
-      text-transform: uppercase; }
-    main .selling-section .container-content .content-selling .icon, main .selling-section .line-section .container-content-line .content-selling .icon, main .line-section .selling-section .container-content-line .content-selling .icon {
-      justify-content: center; }
-      main .selling-section .container-content .content-selling .icon span, main .selling-section .line-section .container-content-line .content-selling .icon span, main .line-section .selling-section .container-content-line .content-selling .icon span {
-        width: 24px;
-        height: 1px;
-        display: inline-block;
-        background-color: #dcdcdc;
-        margin: 0 5px; }
-      main .selling-section .container-content .content-selling .icon .bx-dumbbell, main .selling-section .line-section .container-content-line .content-selling .icon .bx-dumbbell, main .line-section .selling-section .container-content-line .content-selling .icon .bx-dumbbell {
-        font-size: 25px;
-        color: #dcdcdc; }
-    main .selling-section .container-content .content-selling .subtitle-selling, main .selling-section .line-section .container-content-line .content-selling .subtitle-selling, main .line-section .selling-section .container-content-line .content-selling .subtitle-selling {
-      text-align: center;
-      display: block;
-      color: #939394;
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      white-space: pre-line; }
-  main .selling-section .collection .list-card-collection {
-    display: flex;
-    flex-wrap: wrap; }
-    main .selling-section .collection .list-card-collection .card-collection {
-      width: 25%;
-      padding: 0 10px; }
-      main .selling-section .collection .list-card-collection .card-collection .content-collection .title-card {
-        display: block;
-        text-align: center;
-        color: #222222;
-        margin: 10px 0;
-        font-size: 16px; }
-      main .selling-section .collection .list-card-collection .card-collection .content-collection .price-card {
-        display: block;
-        text-align: center;
-        color: #696969; }
-      main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color {
-        justify-content: center; }
-        main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color .item-color1 {
-          background-color: #111; }
-        main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color .item-color2 {
-          background-color: #e83e8c; }
-        main .selling-section .collection .list-card-collection .card-collection .content-collection .list-color .item-color3 {
-          background-color: #f1da4e; }
-
-main .lastnew-section .container-content, main .lastnew-section .line-section .container-content-line, main .line-section .lastnew-section .container-content-line {
-  padding: 20px 0; }
-  main .lastnew-section .container-content .content-selling .title-selling, main .lastnew-section .line-section .container-content-line .content-selling .title-selling, main .line-section .lastnew-section .container-content-line .content-selling .title-selling {
-    text-align: center;
-    text-transform: uppercase; }
-  main .lastnew-section .container-content .content-selling .icon, main .lastnew-section .line-section .container-content-line .content-selling .icon, main .line-section .lastnew-section .container-content-line .content-selling .icon {
-    justify-content: center; }
-    main .lastnew-section .container-content .content-selling .icon span, main .lastnew-section .line-section .container-content-line .content-selling .icon span, main .line-section .lastnew-section .container-content-line .content-selling .icon span {
-      width: 24px;
-      height: 1px;
-      display: inline-block;
-      background-color: #dcdcdc;
-      margin: 0 5px; }
-    main .lastnew-section .container-content .content-selling .icon .bx-dumbbell, main .lastnew-section .line-section .container-content-line .content-selling .icon .bx-dumbbell, main .line-section .lastnew-section .container-content-line .content-selling .icon .bx-dumbbell {
-      font-size: 25px;
-      color: #dcdcdc; }
-  main .lastnew-section .container-content .content-selling .subtitle-selling, main .lastnew-section .line-section .container-content-line .content-selling .subtitle-selling, main .line-section .lastnew-section .container-content-line .content-selling .subtitle-selling {
-    text-align: center;
-    display: block;
-    color: #939394;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    white-space: pre-line; }
-  main .lastnew-section .container-content .list-blog, main .lastnew-section .line-section .container-content-line .list-blog, main .line-section .lastnew-section .container-content-line .list-blog {
-    display: flex;
-    flex-wrap: wrap; }
-    main .lastnew-section .container-content .list-blog .item-blog, main .lastnew-section .line-section .container-content-line .list-blog .item-blog, main .line-section .lastnew-section .container-content-line .list-blog .item-blog {
-      width: 33.33%;
-      padding: 10px; }
-      main .lastnew-section .container-content .list-blog .item-blog .post-info, main .lastnew-section .line-section .container-content-line .list-blog .item-blog .post-info, main .line-section .lastnew-section .container-content-line .list-blog .item-blog .post-info {
-        margin-bottom: 15px; }
-        main .lastnew-section .container-content .list-blog .item-blog .post-info .post-title, main .lastnew-section .line-section .container-content-line .list-blog .item-blog .post-info .post-title, main .line-section .lastnew-section .container-content-line .list-blog .item-blog .post-info .post-title {
-          color: #333;
-          margin: 10px 0;
-          font-size: 20px;
-          font-weight: 600; }
-        main .lastnew-section .container-content .list-blog .item-blog .post-info .post-time, main .lastnew-section .line-section .container-content-line .list-blog .item-blog .post-info .post-time, main .line-section .lastnew-section .container-content-line .list-blog .item-blog .post-info .post-time {
-          color: #939394; }
-          main .lastnew-section .container-content .list-blog .item-blog .post-info .post-time time, main .lastnew-section .line-section .container-content-line .list-blog .item-blog .post-info .post-time time, main .line-section .lastnew-section .container-content-line .list-blog .item-blog .post-info .post-time time {
-            color: #333;
-            font-weight: 400; }
-      main .lastnew-section .container-content .list-blog .item-blog .post-content, main .lastnew-section .line-section .container-content-line .list-blog .item-blog .post-content, main .line-section .lastnew-section .container-content-line .list-blog .item-blog .post-content {
-        color: #939394;
-        font-size: 1.09375rem;
-        line-height: 2rem; }
-
-main .line-section .container-content-line {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 15px; }
-  main .line-section .container-content-line .line-break-page {
-    display: block;
-    margin: 55px 0;
-    border: 0;
-    border-bottom: 1px solid #e8e9eb; }
-
-main .type-shipping .container-content .list-type, main .type-shipping .line-section .container-content-line .list-type, main .line-section .type-shipping .container-content-line .list-type {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center; }
-  main .type-shipping .container-content .list-type .item-type, main .type-shipping .line-section .container-content-line .list-type .item-type, main .line-section .type-shipping .container-content-line .list-type .item-type {
-    width: 33.33%; }
-    main .type-shipping .container-content .list-type .item-type .icon-truck, main .type-shipping .line-section .container-content-line .list-type .item-type .icon-truck, main .line-section .type-shipping .container-content-line .list-type .item-type .icon-truck {
-      font-size: 35px;
-      margin: 10px 0;
-      color: #f08528; }
-    main .type-shipping .container-content .list-type .item-type h3, main .type-shipping .line-section .container-content-line .list-type .item-type h3, main .line-section .type-shipping .container-content-line .list-type .item-type h3 {
-      font-size: 0.875rem;
-      font-weight: 400;
-      padding: 10px 0; }
-    main .type-shipping .container-content .list-type .item-type p, main .type-shipping .line-section .container-content-line .list-type .item-type p, main .line-section .type-shipping .container-content-line .list-type .item-type p {
-      color: #939394;
-      font-size: 0.875rem; }
+  padding: 1.875rem 0rem; }
 
 .page-footer {
   background: #111111;
   margin-top: 20px; }
-  .page-footer .footer-top .container-content .content-footertop, .page-footer .footer-top main .line-section .container-content-line .content-footertop, main .line-section .page-footer .footer-top .container-content-line .content-footertop {
-    height: 50vh;
-    color: #fff; }
-    .page-footer .footer-top .container-content .content-footertop .content-contact, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact {
-      width: 25%; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact img, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact img, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact img {
-        margin-bottom: 20px; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact .contact-address, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact .contact-address, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact .contact-address {
+
+.container-content .content-footertop {
+  height: auto;
+  padding: 3rem 0;
+  color: #fff; }
+  .container-content .content-footertop .content-contact {
+    width: 25%; }
+    .container-content .content-footertop .content-contact img {
+      margin-bottom: 20px; }
+    .container-content .content-footertop .content-contact .contact-address {
+      margin-bottom: 10px; }
+      .container-content .content-footertop .content-contact .contact-address .address {
+        display: inline; }
+    .container-content .content-footertop .content-contact .contact-mail {
+      margin: 0 0 10px 0; }
+    .container-content .content-footertop .content-contact .contact-phone {
+      margin: 0 0 10px 0; }
+    .container-content .content-footertop .content-contact .contact-icon {
+      font-size: 1.09375rem; }
+  .container-content .content-footertop .content-contact2 {
+    width: 20%; }
+    .container-content .content-footertop .content-contact2 h5 {
+      margin-bottom: 20px; }
+    .container-content .content-footertop .content-contact2 ul {
+      margin: 10px 0; }
+      .container-content .content-footertop .content-contact2 ul li {
         margin-bottom: 10px; }
-        .page-footer .footer-top .container-content .content-footertop .content-contact .contact-address .address, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact .contact-address .address, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact .contact-address .address {
-          display: inline; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact .contact-mail, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact .contact-mail, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact .contact-mail {
-        margin: 0 0 10px 0; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact .contact-phone, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact .contact-phone, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact .contact-phone {
-        margin: 0 0 10px 0; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact .contact-icon, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact .contact-icon, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact .contact-icon {
-        font-size: 1.09375rem; }
-    .page-footer .footer-top .container-content .content-footertop .content-contact2, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact2, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact2 {
-      width: 20%; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact2 h5, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact2 h5, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact2 h5 {
-        margin-bottom: 20px; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact2 ul, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact2 ul, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact2 ul {
-        margin: 10px 0; }
-        .page-footer .footer-top .container-content .content-footertop .content-contact2 ul li, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact2 ul li, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact2 ul li {
-          margin-bottom: 10px; }
-    .page-footer .footer-top .container-content .content-footertop .content-contact3, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 {
-      width: 35%; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact3 h5, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3 h5, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 h5 {
-        margin-bottom: 20px; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact3 .details-contact p, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3 .details-contact p, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 .details-contact p {
-        margin-bottom: 10px; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact3 .details-contact form .form-mail, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3 .details-contact form .form-mail, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 .details-contact form .form-mail {
-        display: flex; }
-        .page-footer .footer-top .container-content .content-footertop .content-contact3 .details-contact form .form-mail input[type="text"], .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3 .details-contact form .form-mail input[type="text"], main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 .details-contact form .form-mail input[type="text"] {
-          border-radius: 0;
-          background-color: #111;
-          color: #fff;
-          width: 70%;
-          border: 1px solid #939394; }
-        .page-footer .footer-top .container-content .content-footertop .content-contact3 .details-contact form .form-mail button[type="submit"], .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3 .details-contact form .form-mail button[type="submit"], main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 .details-contact form .form-mail button[type="submit"] {
-          width: 30%;
-          background-color: #f08328;
-          border: 1px solid #f08328;
-          color: #fff;
-          font-weight: 600; }
-      .page-footer .footer-top .container-content .content-footertop .content-contact3 .icon-contact3, .page-footer .footer-top main .line-section .container-content-line .content-footertop .content-contact3 .icon-contact3, main .line-section .page-footer .footer-top .container-content-line .content-footertop .content-contact3 .icon-contact3 {
-        margin-top: 20px; }
-  .page-footer .footer-bottom {
-    padding: 0;
-    height: 12vh;
-    color: #fff;
-    background-color: #111; }
-    .page-footer .footer-bottom .container-content ul li, .page-footer .footer-bottom main .line-section .container-content-line ul li, main .line-section .page-footer .footer-bottom .container-content-line ul li {
-      display: inline-block;
-      width: 70px; }
+  .container-content .content-footertop .content-contact3 {
+    width: 35%; }
+    .container-content .content-footertop .content-contact3 h5 {
+      margin-bottom: 20px; }
+    .container-content .content-footertop .content-contact3 .details-contact p {
+      margin-bottom: 10px; }
+    .container-content .content-footertop .content-contact3 .details-contact form .form-mail {
+      display: flex; }
+      .container-content .content-footertop .content-contact3 .details-contact form .form-mail input[type="text"] {
+        border-radius: 0;
+        background-color: #111;
+        color: #fff;
+        width: 70%;
+        border: 1px solid #939394; }
+      .container-content .content-footertop .content-contact3 .details-contact form .form-mail button[type="submit"] {
+        width: 30%;
+        background-color: #f08328;
+        border: 1px solid #f08328;
+        color: #fff;
+        font-weight: 600; }
+    .container-content .content-footertop .content-contact3 .icon-contact3 {
+      margin-top: 20px; }
+
+.footer-bottom {
+  padding: 0;
+  height: 61px;
+  color: #fff;
+  background-color: #111; }
+  .footer-bottom .container-content ul li {
+    display: inline-block;
+    padding: 0 18px; }
 
 .is-hidden {
   display: none; }

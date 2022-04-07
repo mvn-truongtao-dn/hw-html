@@ -1,0 +1,28 @@
+.card-course {
+    height: 300px;
+    width: 33.33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 10px;
+    position: relative;
+    .content-card {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+    .sub-course {
+        color: map-get($map: $colors, $key: white);
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+    }
+    .title-course {
+        color: map-get($map: $colors, $key: white);
+        font-size: 35px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    }
+}
