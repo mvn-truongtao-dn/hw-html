@@ -1,0 +1,95 @@
+.page-footer {
+  // @include pxRem(padding, 10);
+  background: map-get($map: $colors, $key: bg-black);
+  // text-align: center;
+  margin-top: 20px;
+}
+.container-content {
+  .content-footertop {
+    height: auto;
+    padding: 3rem 0;
+    color: map-get($map: $colors, $key: white);
+    .content-contact{
+      width: 25%;
+      img {
+        margin-bottom: 20px;
+      }
+      .contact-address { 
+        margin-bottom: 10px;
+        .address {
+          display: inline;
+        }
+      }
+      .contact-mail {
+        margin: 0 0 10px 0;
+      }
+      .contact-phone {
+        margin: 0 0 10px 0;
+      }
+      .contact-icon {
+        font-size: $font-size-lg;
+      }
+    }
+    .content-contact2 {
+      width: 20%;
+      h5 {
+        margin-bottom: 20px;
+      }
+      ul {
+        margin: 10px 0;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .content-contact3 {
+      width: 35%;
+      h5 {
+        margin-bottom: 20px;
+      }
+      .details-contact {
+        p {
+          margin-bottom: 10px;
+        }
+        form {
+          .form-mail {
+            display: flex;
+            input[type="text"] {
+              border-radius: 0;
+              background-color: map-get($map: $colors, $key: black);
+              color: map-get($map: $colors, $key: white);
+              width: 70%;
+              border: 1px solid map-get($map: $colors, $key: txt-gray);
+            }
+            button[type="submit"] {
+              width: 30%;
+              background-color: map-get($map: $colors, $key: button-orange);
+              border: 1px solid map-get($map: $colors, $key: button-orange);
+              color: map-get($map: $colors, $key: white);
+              font-weight: map-get($map: $font-weight, $key: medium);
+            }
+          }
+        }
+      }
+      .icon-contact3 {
+        margin-top: 20px;
+      }
+    }
+    
+  }
+}
+
+.footer-bottom {
+  padding: 0;
+  height: 61px;
+  color: map-get($map: $colors, $key: white);
+  background-color: map-get($map: $colors, $key: black);
+  .container-content {
+    ul {
+      li {
+        display: inline-block;
+        padding: 0 18px;
+      }
+    }
+  }
+}
