@@ -1,0 +1,131 @@
+// Mixins for build grid
+$grid-columns: 12;
+@mixin build-grid($size) {
+  @for $i from 1 through $grid-columns {
+    @if $size != '' {
+      .col-#{$size}-#{$i} {
+        width: percentage($i / $grid-columns);
+      }
+    } @else {
+      .col-#{$i} {
+        width: percentage($i / $grid-columns);
+      }
+    }
+  }
+}
+
+// @mixin responsive-column($size) {
+//   flex-direction:   ;
+// }
+// End mixins for build grid
+$grid-gutter: 10px;
+$container-width: 1200px;
+.container {
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
+  margin: 0 auto;
+  max-width: $container-width;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-gutter;
+  margin-right: -$grid-gutter;
+  > [class*="col-"] {
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+  }
+}
+
+// Remove gutters (margin, padding) of row & col
+.row-no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+  > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Grid for all screen
+ * Ex: col-1, col-2 */
+@include build-grid('');
+
+/* Grid for screen min-width: $small
+ * Ex: col-small-1, col-small-2 */
+@include respond-above(small) {
+  @include build-grid(small);
+}
+
+/* Grid for screen min-width: $medium
+ * Ex: col-medium-1, col-medium-2 */
+@include respond-above(medium) {
+  @include build-grid(medium);
+}
+
+/* Grid for screen min-width: $large
+ * Ex: col-large-1, col-large-2 */
+@include respond-above(large) {
+  @include build-grid(large);
+}
+
+/* Grid for screen min-width: $largest
+ * Ex: col-largest-1, col-largest-2 */
+@include respond-above(largest) {
+  @include build-grid(largest);
+}
+
+@include respond-below(medium) {
+  .list-card-course {
+    flex-direction: column;
+  }
+  .card-course {
+    width: 370px;
+    margin: 10px 0;
+  }
+  .list-card-collection .card-collection {
+    width: 50% !important;
+  }
+  .item-blog {
+    width: 100% !important;
+    text-align: center;
+  }
+  .item-type {
+    width: 100% !important;
+  }
+  .content-contact {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+  .content-contact2 {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+  .content-contact3 {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+  .content-footertop {
+    padding: 3rem 3rem !important;
+  }
+  .content-footerbottom {
+    flex-direction: column;
+    ul {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include respond-below(large) {
+  nav {
+    .list-menu {
+      display: none !important;
+    }
+  }
+  .btn-openmenu {
+    display: block !important;
+  }
+  .header-bottom-container {
+    padding: 0 3rem !important;
+  }
+}
