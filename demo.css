@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    padding: 0 30px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+}
+
+.color {
+    width: 20px;
+    display: flex;
+    margin: 10px 50%;
+    height: 20px;
+    background-color: maroon;
+}
